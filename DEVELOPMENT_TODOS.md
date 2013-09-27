@@ -28,6 +28,12 @@ __General__:
 
 * [A] : The Sponsorship app, as it is now, will be buggy if Eventbrite isn’t being used, b/c Eventbrite is so heavily baked into the sponsor-signup and management flows at this point. a) Do we think we won’t want to use Eventbrite in some cases? and, if ‘yes’, b) can we refactor to make the code work either way?
 
+* [B-A] : I've noted some places in the ```views.py``` file where I think that DRY principles need to be applied.
+
+    * First, I would consider removing the settings checks (are Eventbrite settings set correctly) and writing tests to check for correct settings instead.
+    * Second, do we absolutely need both ```add``` and ```apply```? I would probably consider collapsing those into a single view. That was an original Symposion thing.
+    * Third, I would probably try to pull all the Eventbrite calls and data processing out into helper functions (put in ```sponsorship/utils.py```) to reduce the size and complexity of the views.
+
 
 __is\_active filter__:
 
