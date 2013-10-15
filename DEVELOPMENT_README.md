@@ -170,3 +170,24 @@ At this point you will want to form a team and assign permissions, or add an exi
 
 * Important! Read the documentation on setting up the Teams app on startup at ```symposion/docs/teams.rst```, which will explain how to run the command line tool to set up this functionality. Once completed, if at any time in the course of development/deployment you are prompted to drop ‘stale or unused’ table ‘Reviews | Review’, respond by typing ‘no’. Entering ‘yes’ will disable the Teams functionality. Most likely to happen on ‘syncdb’ or during migrations.
 
+### Setting up the Symposion admin when first starting to work on the repo:
+
+The following should be added (see screenshots directory for more details):
+
+Conferences:
+conference
+sections
+
+Proposals:
+proposal kinds
+proposal sections
+
+Sites:
+localhost
+
+Site tree:
+site tree
+
+Sponsorship:
+sponsor levels
+benefits
