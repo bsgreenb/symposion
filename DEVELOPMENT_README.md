@@ -175,12 +175,10 @@ At this point you will want to form a team and assign permissions, or add an exi
 The following should be added (see screenshots directory for more details):
 
 Conferences:
-conference
-sections
+conference, sections
 
 Proposals:
-proposal kinds
-proposal sections
+proposal kinds, proposal sections
 
 Sites:
 localhost
@@ -189,5 +187,4 @@ Site tree:
 site tree
 
 Sponsorship:
-sponsor levels
-benefits
+sponsor levels, benefits
